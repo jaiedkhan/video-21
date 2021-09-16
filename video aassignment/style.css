@@ -1,0 +1,50 @@
+.navbar-brand img{
+    max-width: 50px;
+}
+.navbar-nav {
+   
+}
+.navbar-nav li a{
+
+ position: relative;
+}
+
+ul.navbar-nav li a::after {
+    content: "";
+    position: absolute;
+    height: 4.5px;
+    width: 92%;
+    left: 1px;
+    bottom: -5px;
+    background: #000;
+    transition: .3s all ease;
+    transform: scaleX(0);
+}
+.navbar-nav li a:hover:after{
+    transform: scaleX(1);
+
+}
+.inner {
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.card img{
+    transition: .4s;
+
+    width: 100%;
+
+}
+.card img:hover{
+    transform:  scale(1.1) rotateX(.90deg);
+    opacity : #000;
+
+}
+.inner i{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+
+}
